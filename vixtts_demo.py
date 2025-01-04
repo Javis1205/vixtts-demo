@@ -281,7 +281,7 @@ def read_logs():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="""viXTTS inference demo\n\n""",
+        description="""TTS Demo\n\n""",
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
@@ -314,10 +314,7 @@ if __name__ == "__main__":
         REFERENCE_AUDIO = os.abspath(args.reference_audio)
 
     with gr.Blocks() as demo:
-        intro = """
-        # viXTTS Inference Demo
-        Visit viXTTS on HuggingFace: [viXTTS](https://huggingface.co/capleaf/viXTTS)
-        """
+        intro = """"""
         gr.Markdown(intro)
         with gr.Row():
             with gr.Column() as col1:
